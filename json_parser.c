@@ -43,7 +43,7 @@ void json_parser(char *file_path_ptr, Student_t *database_ptr, int *number_of_st
         student_login = cJSON_GetObjectItem(array_item, "student_login");
         Student_t student = {&student_id->valueint,
                              student_name->valuestring,
-                             student_record_number->valuestring,
+                             &student_record_number->valueint,
                              &student_rating->valuedouble,
                              &student_attendance->valueint,
                              student_login->valuestring};

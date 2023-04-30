@@ -10,7 +10,7 @@
 typedef struct {
     int *student_id;
     char *student_name;
-    char *student_record_number;
+    int *student_record_number;
     double *student_rating;
     int *student_attendance;
     char *student_login;
