@@ -19,6 +19,4 @@ int main(int argc, char **argv) {
 }
 
 // TODO
-// Узнавать количество студентов из JSON и тогда DB_CAPACITY = число студентов
-// Выделить память под указатели на данные студентов
 // Сделать файлы stack.c & stack.h, в них функции push_students & pop_students
