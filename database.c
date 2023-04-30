@@ -10,3 +10,5 @@ void print_database(Student_t *database_ptr, int number_of_students) {
                *database_ptr[i].student_rating, *database_ptr[i].student_attendance, database_ptr[i].student_login);
     }
 }
+
+//void free_database() {}

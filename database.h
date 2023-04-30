@@ -18,4 +18,6 @@ typedef struct {
 
 void print_database(Student_t *database_ptr, int number_of_students);
 
+//void free_database();
+
 #endif
