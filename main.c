@@ -15,8 +15,9 @@ int main(int argc, char **argv) {
     database = (Student_t *) malloc(sizeof(Student_t) * number_of_students);
     add_students_to_database(json_student_array, database, number_of_students);
     print_database(database, number_of_students);
-//    free_database();                                                        // <---- TO DO
+    free_database(database, number_of_students);
 }
 
 // TODO
+// free database
 // Сделать файлы stack.c & stack.h, в них функции push_students & pop_students

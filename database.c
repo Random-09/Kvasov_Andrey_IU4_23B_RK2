@@ -11,4 +11,22 @@ void print_database(Student_t *database_ptr, int number_of_students) {
     }
 }
 
-//void free_database() {}
+void free_database(Student_t *database_ptr, int number_of_students) {
+    for (int i = 0; i < number_of_students; i++) {
+        free(database_ptr[i].student_id);
+        free(database_ptr[i].student_name);
+        free(database_ptr[i].student_record_number);
+        free(database_ptr[i].student_rating);
+        free(database_ptr[i].student_attendance);
+        free(database_ptr[i].student_login);
+    }
+    free(database_ptr);
+}
+
+
+//free(p_database[index].id);
+//free(p_database[index].name);
+//free(p_database[index].student_card_number);
+//free(p_database[index].average_grade);
+//free(p_database[index].login);
+//free(p_database[index].hash);

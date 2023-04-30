@@ -2,6 +2,7 @@
 #define RK2_DATABASE_H
 
 #include <stdio.h>
+#include <stdlib.h>
 
 #define DB_CAPACITY 50
 
@@ -18,6 +19,6 @@ typedef struct {
 
 void print_database(Student_t *database_ptr, int number_of_students);
 
-//void free_database();
+void free_database(Student_t *database_ptr, int number_of_students);
 
 #endif
