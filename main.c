@@ -7,4 +7,5 @@ int main() {
     database = (Student_t *) malloc(DB_CAPACITY * (sizeof(Student_t)));
     int number_of_students = 0;
     json_parser("../database.json", database, &number_of_students);
+    print_database(database, number_of_students);
 }
