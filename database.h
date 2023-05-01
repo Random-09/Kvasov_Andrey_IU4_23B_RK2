@@ -4,10 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define DB_CAPACITY 50
-
-// id, name, record_book, rating, attendance, login
-
 typedef struct {
     int *student_id;
     char *student_name;
@@ -18,8 +14,6 @@ typedef struct {
 } Student_t;
 
 void print_database(Student_t *database_ptr, int number_of_students);
-
-void get_students_ids(Student_t *database_ptr, int *student_ids_ptr, int number_of_students);
 
 int id_index(int id, Student_t *database_ptr, int number_of_students);
 
