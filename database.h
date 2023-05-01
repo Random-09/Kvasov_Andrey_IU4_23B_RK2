@@ -19,8 +19,8 @@ typedef struct {
 
 void print_database(Student_t *database_ptr, int number_of_students);
 
-int id_index(int id, Student_t *database_ptr, int number_of_students);
+void get_students_ids(Student_t *database_ptr, int *student_ids_ptr, int number_of_students);
 
-void free_database(Student_t *database_ptr, int number_of_students);
+int id_index(int id, Student_t *database_ptr, int number_of_students);
 
 #endif

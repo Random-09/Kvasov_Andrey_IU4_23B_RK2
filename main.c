@@ -1,5 +1,6 @@
 #include "json_parser.h"
 #include "database.h"
+#include "stack.h"
 #include "cJSON-master/cJSON.h"
 #include <stdlib.h>
 
@@ -16,10 +17,8 @@ int main(int argc, char **argv) {
     database = (Student_t *) malloc(sizeof(Student_t) * number_of_students);
     add_students_to_database(json_student_array, database, number_of_students);
     print_database(database, number_of_students);
-
-
+    Stack_t *stack_top = NULL;
+    push_students(&stack_top, database, number_of_students);
+    pop_students(&stack_top);
     free(database);
 }
-
-// TODO
-// Проверка на то, что id есть в БД

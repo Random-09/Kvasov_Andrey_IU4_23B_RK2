@@ -5,16 +5,15 @@
 #include "database.h"
 
 typedef struct Stack {
-     Student_t *student;
+    Student_t *student;
     struct Stack *next;
 } Stack_t;
 
-
-void push_students(Stack_t *stack_top, Student_t *database_ptr, int number_of_students);
+void push_students(Stack_t **stack_top, Student_t *database_ptr, int number_of_students);
 
 bool check_id(int student_id, Student_t *database_ptr, int number_of_students, const int *ids_in_stack_ptr);
 
-void pop_students(Stack_t *stack_head);
+void pop_students(Stack_t **stack_top);
 
 
 #endif
