@@ -1,5 +1,5 @@
 #include <string.h>
-#include "json_parser.h"
+#include "../include/json_parser.h"
 
 cJSON *request_json(char *file_path_ptr) {
     size_t file_len;

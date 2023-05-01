@@ -1,4 +1,4 @@
-#include "database.h"
+#include "../include/database.h"
 
 void print_database(Student_t *database_ptr, int number_of_students) {
     for (int i = 0; i < number_of_students; i++) {

@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "cJSON-master/cJSON.h"
+#include "../cJSON-master/cJSON.h"
 #include "database.h"
 
 cJSON *request_json(char *file_path_ptr);

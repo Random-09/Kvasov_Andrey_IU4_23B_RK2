@@ -1,6 +1,6 @@
-#include "json_parser.h"
-#include "database.h"
-#include "stack.h"
+#include "include/json_parser.h"
+#include "include/database.h"
+#include "include/stack.h"
 #include "cJSON-master/cJSON.h"
 #include <stdlib.h>
 

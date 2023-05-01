@@ -1,4 +1,4 @@
-#include "stack.h"
+#include "../include/stack.h"
 
 void push_students(Stack_t **stack_top, Student_t *database_ptr, int number_of_students) {
     puts("Enter students' IDs'");
