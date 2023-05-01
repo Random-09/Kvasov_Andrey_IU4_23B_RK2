@@ -11,16 +11,12 @@ void print_database(Student_t *database_ptr, int number_of_students) {
     }
 }
 
-void free_database(Student_t *database_ptr, int number_of_students) {
+int id_index(int id, Student_t *database_ptr, int number_of_students) {
     for (int i = 0; i < number_of_students; i++) {
-        free(database_ptr[i].student_id);
-        free(database_ptr[i].student_name);
-        free(database_ptr[i].student_record_number);
-        free(database_ptr[i].student_rating);
-        free(database_ptr[i].student_attendance);
-        free(database_ptr[i].student_login);
+        if (*database_ptr[i].student_id == id)
+            return i;
     }
-    free(database_ptr);
+    return -1;
 }
 
 
