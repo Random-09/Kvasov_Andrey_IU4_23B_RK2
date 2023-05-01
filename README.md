@@ -1,2 +1,2 @@
 
-### Informatics sem2 RK2
+### Informatics semester2 RK2
