@@ -20,5 +20,6 @@ int main(int argc, char **argv) {
     Stack_t *stack_top = NULL;
     push_students(&stack_top, database, number_of_students);
     pop_students(&stack_top);
+    cJSON_Delete(json_object);
     free(database);
 }
