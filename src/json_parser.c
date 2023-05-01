@@ -14,7 +14,7 @@ cJSON *request_json(char *file_path_ptr) {
     fseek(file_ptr, 0, SEEK_SET);
     buffer = malloc(sizeof(char) * file_len);
     fread(buffer, sizeof(char), file_len, file_ptr);
-
+    fclose(file_ptr);
     cJSON *json_file = cJSON_Parse(buffer);
     if (json_file == NULL) {
         const char *error_ptr = cJSON_GetErrorPtr();
