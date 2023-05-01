@@ -28,7 +28,7 @@ bool check_id(int student_id, Student_t *database_ptr, int number_of_students, c
         if (ids_in_stack_ptr[i] == student_id)
             return false;
     }
-    if (id_index(student_id, database_ptr, number_of_students) == -1) {
+    if (!id_in_database(student_id, database_ptr, number_of_students)) {
         return false;
     }
     return true;

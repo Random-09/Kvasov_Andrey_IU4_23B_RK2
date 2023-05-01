@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 typedef struct {
     int *student_id;
@@ -14,6 +15,8 @@ typedef struct {
 } Student_t;
 
 void print_database(Student_t *database_ptr, int number_of_students);
+
+bool id_in_database(int id, Student_t *database_ptr, int number_of_students);
 
 int id_index(int id, Student_t *database_ptr, int number_of_students);
 
